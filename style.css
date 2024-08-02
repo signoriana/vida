@@ -1,0 +1,135 @@
+html {
+  height: 100%;
+  width: 100%;
+}
+
+:root {
+  --cor-de-fundo: #0a0137;
+  --verde: #00eeff;
+  --branco: #fff;
+  --botao-ativo: #0068b8;
+  --botao-inativo: rgb(97, 102, 255, 0.5);
+  --texto-fundo: rgb(20, 142, 255, 0.5);
+}
+
+body {
+  background-color: var(--cor-de-fundo);
+  color: var(--branco);
+  font-family: "Sedan", serif;
+}
+
+.conteudo-principal {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin: 0 auto;
+  width: 100%;
+  max-width: 1280px;
+}
+
+.titulo-principal {
+  text-align: left;
+  width: 100%;
+  font-size: 2rem;
+}
+
+.titulo-principal span {
+  color: var(--verde);
+}
+
+.botao {
+  background-color: var(--botao-inativo);
+  color: var(--branco);
+  font-size: 1.1rem;
+  padding: 1rem;
+  font-family: "Sedan", sans-serif;
+  display: flex;
+  width: 100%;
+  border-bottom: 4px solid var(--botao-ativo);
+  border-left: 2px solid var(--botao-ativo);
+  border-right: 2px solid var(--botao-ativo);
+  border-top: none;
+}
+
+.botao:first-child {
+  border-radius: 2rem 0 0 0;
+}
+
+.botoes {
+  display: block;
+}
+
+.botao.ativo {
+  background-color: var(--botao-ativo);
+  border-bottom: 4px solid var(--verde);
+}
+
+.abas-conteudo.ativo {
+  display: block;
+}
+
+.abas-conteudo {
+  display: none;
+}
+
+.abas-texto {
+  background-color: var(--texto-fundo);
+  padding: 40px;
+  border-radius: 0 0 2rem 2rem;
+}
+
+.aba-conteudo-titulo-principal {
+  text-align: center;
+  font-size: 1.5rem;
+}
+
+.aba-conteudo-titulo-secundario {
+  text-align: center;
+  color: var(--verde);
+  text-transform: uppercase;
+}
+
+.contador {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.digitos {
+  text-align: center;
+  padding: 0 1rem;
+  min-width: 6rem;
+}
+
+.digito-numero {
+  font-size: 4rem;
+  margin: 0;
+}
+
+.digito-texto {
+  color: var(--verde);
+  font-size: 1.1rem;
+  margin: 0;
+}
+
+.bunny {
+  width: 25%;
+}
+
+img {
+  margin: auto;
+  display: block;
+}
+
+}
+
+@media screen and (min-width: 768px) {
+  .botoes {
+    display: flex;
+  }
+
+  .botao:last-child {
+    border-radius: 0 2rem 0 0;
+  }
+}
